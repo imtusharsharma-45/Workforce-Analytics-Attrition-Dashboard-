@@ -148,7 +148,7 @@ The dashboard includes:
 
 ## Dashboard Preview
 
-![HR Analytics Dashboard](screenshots/hr_dashboard.png)
+![HR Analytics Dashboard](screenshots/Hr%20analytics%20dashboard.png)
 
 ---
 
