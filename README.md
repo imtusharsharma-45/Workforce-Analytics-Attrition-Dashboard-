@@ -274,6 +274,6 @@ This project demonstrates practical experience with:
 
 **Tushar Sharma**
 
-Data Analyst | SQL | Python | Power BI | Tableau | AWS | Snowflake
+Data Analyst | SQL | Python | Power BI | Advanced Excel | AWS | Snowflake
 
 GitHub: `imtusharsharma-45`
