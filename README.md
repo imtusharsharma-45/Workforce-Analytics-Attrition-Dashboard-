@@ -195,7 +195,6 @@ The dashboard provides an executive view of workforce attrition.
 
 - End-to-End HR Analytics Workflow
 - Data Cleaning & Validation
-- Feature Engineering
 - Exploratory Data Analysis
 - Business Insight Generation
 - Interactive Power BI Dashboard
