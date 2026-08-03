@@ -1,239 +1,228 @@
-# HR Analytics Dashboard
-
-## Project Overview
-
-This project analyzes employee workforce and attrition data using **Python, Pandas, exploratory data analysis (EDA), and Power BI**.
-
-The analysis covers **1,470 employees across 35 attributes** and focuses on identifying workforce patterns associated with employee attrition, including overtime, department, age, income, gender, and job satisfaction.
-
-An interactive Power BI dashboard was developed to monitor key HR metrics and help identify employee groups that may require greater retention attention.
+# 👥 Workforce Analytics & Attrition Dashboard
 
 ---
 
-## Business Problem
+# 📌 Project Overview
 
-Employee attrition can increase recruitment costs, reduce organizational productivity, and lead to the loss of experienced employees.
+This project presents an end-to-end Workforce Analytics solution using **Python, Pandas, Matplotlib, Seaborn, Power BI, and DAX** to analyze employee attrition patterns.
 
-The objective of this project is to analyze workforce data and identify characteristics associated with employee attrition so that HR teams can make more informed retention and workforce-management decisions.
+The analysis covers **1,470 employees** across **35 workforce attributes**, helping identify the key factors associated with employee turnover, including overtime, department, age, monthly income, gender, and job satisfaction.
 
-### Business Questions
+The project follows a complete analytics workflow from **data exploration and cleaning** to **EDA** and finally an **interactive Power BI dashboard** for business reporting.
 
-The analysis focuses on:
+---
+
+# 🎯 Business Problem
+
+Employee attrition affects organizational productivity, increases recruitment costs, and leads to the loss of experienced employees.
+
+The objective of this project is to identify workforce characteristics associated with employee attrition and provide actionable insights that support HR teams in improving employee retention and workforce planning.
+
+---
+
+# 🔄 Project Workflow
+
+Dataset
+
+↓
+
+Data Understanding
+
+↓
+
+Data Cleaning & Validation
+
+↓
+
+Feature Engineering
+
+↓
+
+Exploratory Data Analysis (EDA)
+
+↓
+
+Business Insights
+
+↓
+
+Power BI Dashboard
+
+↓
+
+Business Recommendations
+
+---
+
+# ❓ Business Questions
+
+The project answers the following business questions:
 
 - What is the overall employee attrition rate?
-- Does overtime appear to be associated with higher attrition?
-- Which departments have the highest attrition counts?
-- How does attrition vary across age groups?
-- How does employee income differ between retained and attrited employees?
-- How does job satisfaction differ between retained and attrited employees?
-- Is there a substantial difference in attrition patterns by gender?
-- Which employee groups may require greater retention attention?
+- Does overtime influence employee attrition?
+- Which departments experience higher attrition?
+- Are younger employees more likely to leave?
+- How does monthly income differ between retained and attrited employees?
+- Does job satisfaction affect employee attrition?
+- Does employee attrition vary by gender?
+- What workforce characteristics should HR prioritize for retention strategies?
 
 ---
 
-## Tools & Technologies
+# 🛠️ Tools & Technologies
 
 | Technology | Purpose |
-|---|---|
-| Python | Data analysis and exploratory analysis |
-| Pandas | Data manipulation |
-| NumPy | Numerical operations |
-| Matplotlib | Data visualization |
-| Seaborn | Exploratory visualization |
-| Power BI | Interactive HR dashboard |
-| DAX | KPI and dashboard calculations |
-| VS Code | Development environment |
+|------------|---------|
+| Python | Data Cleaning & Analysis |
+| Pandas | Data Manipulation |
+| NumPy | Numerical Operations |
+| Matplotlib | Data Visualization |
+| Seaborn | Exploratory Data Analysis |
+| Power BI | Interactive Dashboard |
+| DAX | KPI Calculations |
+| VS Code | Development Environment |
+| Git & GitHub | Version Control & Documentation |
 
 ---
 
-## Dataset Information
+# 📂 Dataset Information
 
-The dataset contains **1,470 employee records across 35 columns**.
-
-The dataset includes information related to:
-
-- Employee demographics
-- Age
-- Gender
-- Department
-- Job role
-- Monthly income
-- Overtime
-- Job satisfaction
-- Environment satisfaction
-- Work-life balance
-- Years at company
-- Total working years
-- Performance rating
-- Employee attrition
+The dataset contains **1,470 employee records** across **35 columns**.
 
 ### Dataset Summary
 
 | Metric | Value |
-|---|---:|
+|---------|-------:|
 | Total Employees | 1,470 |
 | Total Attributes | 35 |
-| Attrited Employees | 237 |
+| Attrition Count | 237 |
 | Retained Employees | 1,233 |
 | Attrition Rate | 16.12% |
-| Average Monthly Income | 6,502.93 |
+| Average Monthly Income | 6.50K |
 | Missing Values | 0 |
-| Exact Duplicate Rows | 0 |
+| Duplicate Records | 0 |
 
 ---
 
-## Data Preparation
+# 🧹 Data Preparation
 
-The dataset was reviewed before analysis to ensure that it was suitable for workforce and attrition analysis.
+The following data preparation steps were performed:
 
-The preparation process included:
-
-- Reviewing dataset dimensions
-- Inspecting column names and data types
-- Checking for missing values
-- Checking for duplicate records
-- Reviewing categorical HR variables
-- Validating numerical employee attributes
-- Preparing employee groups required for analysis and visualization
-
-The dataset contains **no missing values and no exact duplicate rows**.
+- Reviewed dataset dimensions
+- Inspected data types
+- Checked missing values
+- Checked duplicate records
+- Validated categorical columns
+- Reviewed numerical features
+- Created **Age Group** feature for analysis
+- Prepared data for dashboard reporting
 
 ---
 
-## Exploratory Data Analysis
+# 📊 Exploratory Data Analysis (EDA)
 
-EDA was performed to understand employee attrition across important workforce characteristics.
+The analysis includes:
 
-The analysis focused on:
+- Employee Attrition Distribution
+- Overtime vs Attrition
+- Department-wise Attrition
+- Age vs Attrition
+- Monthly Income vs Attrition
+- Job Satisfaction vs Attrition
+- Gender vs Attrition
+- Correlation Heatmap
 
-- Overall attrition distribution
-- Overtime and attrition
-- Department-wise attrition
-- Age and attrition
-- Monthly income and attrition
-- Job satisfaction and attrition
-- Gender and attrition
-- Employee demographic patterns
+All visualizations were created using **Matplotlib** and **Seaborn**.
 
 ---
 
-## Power BI Dashboard
+# 📈 Power BI Dashboard
 
-An interactive Power BI dashboard was developed to provide an executive-level view of workforce attrition.
+The dashboard provides an executive view of workforce attrition.
 
 ### KPI Cards
 
-| KPI | Result |
-|---|---:|
+| KPI | Value |
+|------|------:|
 | Total Employees | 1,470 |
-| Attrition Count | 237 |
 | Attrition Rate | 16.12% |
+| Attrition Count | 237 |
 | Average Monthly Income | 6.50K |
 
 ### Dashboard Visualizations
 
-The dashboard includes:
-
-- Employee Attrition by Job Satisfaction
-- Attrition by Department
+- Employee Attrition by Department
 - Employee Attrition by Overtime
-- Attrition by Age Groups
-- Attrition by Gender
-- Department filter
-- Gender filter
-- Overtime filter
-- Key HR insights
+- Employee Attrition by Job Satisfaction
+- Employee Attrition by Age Group
+- Employee Attrition by Gender
+- Department Filter
+- Gender Filter
+- Overtime Filter
+- Business Insights Panel
 
 ---
 
-## Dashboard Preview
+# 🖥️ Dashboard Preview
 
-![HR Analytics Dashboard](screenshots/Hr%20analytics%20dashboard.png)
-
----
-
-## Key Insights
-
-### Overtime
-
-Employees working overtime show a considerably higher attrition proportion.
-
-Among employees working overtime, **127 employees left compared with 289 who remained**, while among employees not working overtime, **110 left compared with 944 who remained**.
-
-This makes overtime an important workforce characteristic for further retention analysis.
-
-### Department
-
-Research & Development records the largest attrition count with **133 employees**, followed by Sales with **92 employees** and Human Resources with **12 employees**.
-
-Because department sizes differ substantially, attrition counts should be interpreted together with department population rather than being treated as attrition rates.
-
-### Monthly Income
-
-Employees who left the organization have an average monthly income of approximately **4,787**, compared with approximately **6,833** among employees who remained.
-
-This indicates an association between lower income and attrition in this dataset, although it does not by itself establish that lower income causes employees to leave.
-
-### Age
-
-Employees who left have an average age of approximately **33.6 years**, compared with approximately **37.6 years** among retained employees.
-
-The dashboard also shows relatively high attrition among younger employee groups.
-
-### Job Satisfaction
-
-Average job satisfaction is lower among employees who left than among employees who remained.
-
-This suggests that job satisfaction may be useful when identifying employee groups requiring additional retention attention.
-
-### Gender
-
-Of the 237 employees who left, **150 are male and 87 are female**.
-
-Gender alone should not be interpreted as a causal driver of attrition, and the difference should be considered alongside the underlying workforce composition.
+![Workforce Analytics & Attrition Dashboard](screenshots/Workforce%20Analytics%20%26%20Attrition%20Dashboard.png)
 
 ---
 
-## Business Recommendations
+# 💡 Key Insights
 
-Based on the analysis:
-
-1. **Review overtime workload**  
-   HR teams should investigate teams and roles with persistent overtime and evaluate workload distribution, staffing levels, and employee well-being.
-
-2. **Strengthen retention among younger employees**  
-   Career development, mentorship, onboarding, and internal growth opportunities may help improve retention among early-career employees.
-
-3. **Review compensation patterns**  
-   Since attrited employees have lower average monthly income in this dataset, compensation competitiveness should be investigated alongside job level, role, experience, and performance.
-
-4. **Monitor employee satisfaction**  
-   Job satisfaction indicators can be incorporated into regular employee-engagement monitoring to identify groups that may require attention.
-
-5. **Analyze departments using attrition rates**  
-   Department size should be considered when comparing workforce risk. Attrition rates provide a better comparison than raw attrition counts alone.
-
-6. **Use multiple indicators together**  
-   Overtime, income, age, department, satisfaction, tenure, and job characteristics should be analyzed together rather than using any single factor to predict employee behavior.
+- Employees working overtime exhibit higher attrition.
+- Employees with lower monthly income are more likely to leave.
+- Research & Development and Sales departments record the highest attrition counts.
+- Lower job satisfaction is associated with increased employee attrition.
+- Younger employees exhibit relatively higher attrition.
+- Workforce retention depends on multiple employee characteristics rather than a single factor.
 
 ---
 
-## Project Structure
+# 📋 Business Recommendations
+
+- Monitor employee overtime and workload.
+- Strengthen onboarding and career development for younger employees.
+- Review compensation strategies for lower-income employees.
+- Improve employee engagement and job satisfaction initiatives.
+- Monitor high-attrition departments regularly.
+- Use multiple workforce indicators when planning retention strategies.
+
+---
+
+# ⭐ Project Features
+
+- End-to-End HR Analytics Workflow
+- Data Cleaning & Validation
+- Feature Engineering
+- Exploratory Data Analysis
+- Business Insight Generation
+- Interactive Power BI Dashboard
+- Executive KPI Reporting
+- Business Recommendations
+
+---
+
+# 📁 Project Structure
 
 ```text
-hr-analytics-dashboard/
+Workforce-Analytics-Attrition-Dashboard/
 │
 ├── Data/
-│   └── HR Employee Attrition dataset
+│   └── HR Employee Attrition.csv
 │
 ├── Notebooks/
-│   └── Python EDA and HR analysis
+│   └── HR_Analytics.ipynb
 │
 ├── Dashboard/
-│   └── Power BI dashboard
+│   └── Workforce Analytics & Attrition Dashboard.pbix
+│
+├── Reports/
+│   └── Visualizations/
 │
 ├── screenshots/
-│   └── hr_dashboard.png
+│   └── Workforce Analytics & Attrition Dashboard.png
 │
 ├── requirements.txt
 │
@@ -242,38 +231,54 @@ hr-analytics-dashboard/
 
 ---
 
-## How to Reproduce the Project
+# ▶️ How to Run the Project
 
-1. Clone or download this repository.
-2. Load the HR dataset from the `Data` directory.
-3. Install the Python dependencies listed in `requirements.txt`.
-4. Run the analysis notebook from the `Notebooks` directory.
-5. Review the exploratory analysis and generated insights.
-6. Open the Power BI dashboard from the `Dashboard` directory.
-7. Validate dashboard KPIs against the source dataset.
+1. Clone this repository.
+2. Load the HR dataset from the **Data** folder.
+3. Install the required Python libraries.
+4. Run the Jupyter Notebook.
+5. Review the EDA visualizations.
+6. Open the Power BI dashboard.
+7. Explore the dashboard using interactive filters.
 
 ---
 
-## Key Learnings
+# 💼 Skills Demonstrated
 
-This project demonstrates practical experience with:
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Visualization
+- Workforce Analytics
+- HR Analytics
+- KPI Development
+- DAX
+- Power BI Dashboard Design
+- Business Insight Generation
+- Business Storytelling
 
-- HR analytics
-- Employee attrition analysis
-- Data quality validation
+---
+
+# 📚 Key Learnings
+
+This project demonstrates practical experience in:
+
+- HR Analytics
+- Employee Attrition Analysis
+- Workforce Segmentation
+- Data Cleaning & Validation
 - Exploratory Data Analysis
-- Workforce segmentation
-- Python-based data analysis
-- Power BI dashboard development
-- DAX-based KPI development
-- Translating workforce data into business recommendations
+- Correlation Analysis
+- Dashboard Development
+- Business Reporting
+- Data-Driven Decision Making
 
 ---
 
-## Author
+# 👨‍💻 Author
 
 **Tushar Sharma**
 
-Data Analyst | SQL | Python | Power BI | Advanced Excel | AWS | Snowflake
+**Data Analyst | SQL | Python | Power BI | Advanced Excel | AWS | Snowflake**
 
-GitHub: `imtusharsharma-45`
+**GitHub:** `imtusharsharma-45`
